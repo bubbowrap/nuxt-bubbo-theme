@@ -1,5 +1,6 @@
 ---
 title: National ITPA
+category: Design, Development
 role: Design, Front-end Development
 link: https://www.nationalitpa.com/
 thumbnail: itpa-thumb.jpg

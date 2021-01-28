@@ -1,0 +1,41 @@
+@import "normalize";
+@import "variables";
+@import "buttons";
+@import "animations";
+@import "typography";
+@import "layout";
+
+//Base styles
+
+// html:focus-within {
+//   scroll-behavior: smooth;
+// }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: $red; /* WebKit/Blink Browsers */
+    color: $white;
+  }
+
+body {
+    background: $white;
+    color: $color-body;
+    font-size: 20px;
+    font-family: $font-family-primary;
+    font-weight: $font-light;
+    letter-spacing: .025rem;
+    height: 100vh;
+}
+.no-scroll {
+@media (max-width: $screen-md) {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+}
