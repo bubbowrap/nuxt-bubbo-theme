@@ -2,6 +2,7 @@
   "name": "nuxt-bubbo-theme",
   "version": "1.0.0",
   "private": true,
+  "description": "What it do",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -12,7 +13,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.5"
+    "frontmatter-markdown-loader": "^3.6.0",
+    "nuxt": "^2.14.5",
+    "vue-flickity": "^1.2.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
@@ -22,6 +25,8 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.1"
+    "node-sass": "^4.14.1",
+    "prettier": "^2.1.1",
+    "sass-loader": "^10.0.2"
   }
 }

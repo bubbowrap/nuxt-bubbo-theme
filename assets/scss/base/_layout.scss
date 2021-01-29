@@ -1,0 +1,13 @@
+.site-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .container {
+    max-width: 65rem;
+    margin: auto;
+    padding: 4rem 1rem;
+  }

@@ -1,0 +1,292 @@
+.c-homepage {
+    $grid-breakpoint: 900px;
+
+    .container {
+        max-width: 65rem;
+        margin: auto;
+        padding: 4rem 1rem;
+    
+        @media(min-width: $grid-breakpoint) {
+        padding: 8rem 1rem;
+        }
+      }
+
+      .hp-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+
+        @media (min-width: $grid-breakpoint) {
+        grid-column-gap: rem(60);
+        grid-template-columns: 1fr 4fr;
+        grid-row-gap: 4rem;
+        }
+      }
+
+    h2 {
+
+        margin: 0;
+        line-height: 1;
+        color: $red;
+        font-size: 2rem;
+
+        @media (min-width: $grid-breakpoint) {
+            justify-self: end;
+        align-self: start;
+        }
+
+        @media (min-width: $screen-lg) {
+            font-size: 2.5rem;
+
+        }
+      }
+
+    .homepage-hero {
+        padding: rem(100) 1rem;
+        
+        @media (min-width: $screen-md) {
+            padding: 12rem 1rem 10rem;
+        }
+    }
+
+    .homepage-hero__title {
+        font-weight: normal;
+        color: $dark;
+        margin: 1rem 0;
+        font-size: 1.75rem;
+
+        @media (min-width: $screen-sm) {
+            font-size: 2.25rem;
+        }
+
+        @media (min-width: $screen-md) {
+            font-size: 2.5rem;
+        }
+        @media (min-width: $grid-breakpoint) {
+            font-size: 3rem;
+        }
+    }
+
+    .homepage-hero__social {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        position: absolute;
+      }
+      .homepage-hero__social-item {
+          margin-right: 1rem;
+      }
+      
+      .homepage-hero__social-link {
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        transition: transform .2s ease;
+        &:hover {
+          transform: translateY(-2px);
+          transition: transform .2s ease;
+        }
+        svg {
+          padding: 0.25rem;
+          border: 2px solid $red;
+          border-radius: 100%;
+          width: 40px;
+          color: white !important;
+        }
+      }
+
+    .portfolio__list {
+        display: grid;
+        grid-gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @media (min-width: $screen-sm) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .portfolio-list-item {
+        justify-self: center;
+        position: relative;
+        background: $dark;
+
+        @media (min-width: $screen-md) {
+            background: rgba(0, 0, 15, 0.8);
+        }
+
+        & > figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: 0;           
+            transition: $animation-basic;
+
+            &:hover {
+                .portfolio-list-item__title {
+                    transition: $animation-basic;
+
+                    @media (min-width: $screen-md) {
+                    opacity: 1;
+                    transform: translate(-50%,-50%) scale(1);
+                    }
+                }
+
+                .portfolio-list-item__img {
+                    transition: $animation-basic;
+                    opacity: .2;
+
+                    @media (min-width: $screen-md) {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        &__img {		
+            display: block;
+            opacity: 1;
+            transition: $animation-basic;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            line-height: 1;
+            padding: 1rem;
+            color: $white;
+            text-align: center;
+            transition: $animation-basic;  
+            width: 100%;
+
+            @media (min-width: $screen-md) {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                opacity: 0;
+                transform: translate(-50%,-50%) scale(1.05);
+            }
+        }
+
+        &__tag {
+            font-size: 1rem;
+            display: block;
+            font-weight: 100;
+            margin-top: 0.5rem;
+        }
+      }
+
+
+    .experience {
+
+        .btn--line {
+            margin-top: -2rem;
+        }
+    }
+
+    .experience-box {
+        grid-column: 1 / span 2;
+
+        @media (min-width: $grid-breakpoint) {
+        grid-column-start: 2;
+        }
+
+    }
+
+    .experience-box__title {
+        margin: 0;
+        color: $red;
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .experience-box__company {
+        margin: 0;
+        color: $dark;
+        font-size: 1.25rem;
+    }
+
+    .experience-box__header {
+
+        @media(min-width:$screen-md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    }
+
+    .experience-box__date {
+        color: $dark;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .experience-box__list {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+
+            &:before {
+                content: '+';
+                color: $red;
+                position: absolute;
+                left: 0;
+                display: block;
+                font-weight: bold;
+                line-height: 1.75;
+            }
+        }
+    }
+
+    .experience-resume-btn {
+        margin-top: -1.5rem;
+
+        @media(min-width: $grid-breakpoint) {
+            grid-column-start: 2;
+        }
+    }
+
+    .skills-lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (min-width: $screen-sm) {
+            grid-template-columns: 1.5fr 3fr 0.5fr;
+        }
+    }
+
+    .skills-lists__title {
+        color: $dark;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+
+    .skills-lists__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.125rem;
+
+        @media (min-width: $screen-sm) {
+            display: flex;
+            flex-flow: wrap column;
+            max-height: 15rem;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+    }
+
+}
