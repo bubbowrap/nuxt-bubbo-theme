@@ -13,6 +13,13 @@ export default {
   components: {
     PortfolioBlock,
   },
+
+  // async asyncData() {
+  // async function asyncImport (blogName) {
+  //   const wholeMD = await import(`~/content/${app.i18n.locale}/blog/${blogName}.md`)
+  //   return wholeMD.attributes
+  // }
+  // },
 }
 </script>
 

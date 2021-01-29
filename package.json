@@ -14,7 +14,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "frontmatter-markdown-loader": "^3.6.0",
-    "nuxt": "^2.14.5"
+    "nuxt": "^2.14.5",
+    "vue-flickity": "^1.2.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
