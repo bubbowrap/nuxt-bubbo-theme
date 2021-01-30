@@ -7,7 +7,7 @@
     data-aos-delay="400"
   >
     <h2>Work</h2>
-    <PortfolioList />
+    <PortfolioList :posts="posts" />
   </section>
 </template>
 
@@ -18,5 +18,7 @@ export default {
   components: {
     PortfolioList,
   },
+  // eslint-disable-next-line
+  props: ['posts'],
 }
 </script>

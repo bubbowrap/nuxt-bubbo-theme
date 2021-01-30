@@ -1,7 +1,7 @@
 <template>
   <main class="site-main c-homepage" role="main">
     <Hero />
-    <Work />
+    <Work :posts="posts" />
     <Experience />
     <About />
     <Contact />
@@ -23,7 +23,22 @@ export default {
     About,
     Contact,
   },
+  async asyncData() {
+    const resolve = await require.context('~/content/', true, /\.md$/)
+    const posts = await resolve.keys().map((key) => {
+      return resolve(key)
+    })
+    return {
+      posts: posts.sort((post) => post.attributes.order),
+    }
+  },
+  methods: {
+    getPermalink(post) {
+      return `${this.prefix}/${
+        post.meta.resourcePath.split('\\').pop().split('/').pop().split('.')[0]
+      }`
+    },
+  },
 }
 </script>
-
 <style lang="scss"></style>

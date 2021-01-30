@@ -4,7 +4,7 @@ description: Web development project for National ITPA. National ITPA is the vol
 category: Design, Development
 role: Design, Front-end Development
 link: https://www.nationalitpa.com/
-thumbnail: itpa/itpa-thumb.jpg
+thumbnail: crevo/crevo-thumb.jpg
 slides: ['itpa/itpa-hero.jpg', 'itpa/itpa-page.jpg','itpa/itpa-interior-pg.jpg']
 alt: National ITPA image
 client: Independent Telecommunications Pioneer Association (ITPA)

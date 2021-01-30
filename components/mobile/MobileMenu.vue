@@ -9,13 +9,13 @@
         <a :href="value" class="navigation-mobile__link">{{ name }}</a>
       </li>
     </ul>
-    <a href="#" class="btn btn--resume">Resume</a>
+    <a :href="resumeLink" class="btn btn--resume">Resume</a>
   </aside>
 </template>
 
 <script>
 export default {
   // eslint-disable-next-line
-  props: ['menuItems'],
+  props: ['menuItems', 'resumeLink'],
 }
 </script>

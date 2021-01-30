@@ -1,7 +1,11 @@
 <template>
   <div class="portfolio">
     <ul class="portfolio__list">
-      <PortfolioBlock />
+      <PortfolioBlock
+        v-for="post in posts"
+        :key="post.attributes.title"
+        :post="post"
+      />
     </ul>
   </div>
 </template>
@@ -13,13 +17,8 @@ export default {
   components: {
     PortfolioBlock,
   },
-
-  // async asyncData() {
-  // async function asyncImport (blogName) {
-  //   const wholeMD = await import(`~/content/${app.i18n.locale}/blog/${blogName}.md`)
-  //   return wholeMD.attributes
-  // }
-  // },
+  // eslint-disable-next-line
+  props: ['posts']
 }
 </script>
 

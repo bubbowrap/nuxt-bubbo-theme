@@ -23,6 +23,8 @@ It was important for the site to be fast, engaging, easy to navigate, and easily
 
 ### Initial Ideas/Style Concepts
 
+![ITPA Style concept](/images/itpa/itpa-thumb.jpg)
+
 One of the problems I had with ITPA is their color scheme. It was initially very difficult for me to figure out how to work with the bright yellow and baby clue. However, the organization has a long and rich history of leaders, so I decided to focus more on that antique feel and build upon that. I also wanted their most important sections to be easily visible and accessible as soon as the user visits the site. I sketched out a few different mobile and desktop low-fidelity wireframes quickly on paper, getting feedback from our internal team before starting on the design mockup in Photoshop.
 
 

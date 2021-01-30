@@ -1,17 +1,19 @@
 <template>
   <li class="portfolio-list-item">
     <figure>
-      <a href="/portfolio/national-itpa/" class="portfolio-list-item__link">
+      <a :href="`${post}`" class="portfolio-list-item__link">
         <img
-          alt="National ITPA thumbnail"
-          data-src="https://www.bubbowrap.com/wp-content/uploads/2018/08/itpa-thumb.jpg"
+          :alt="post.attributes.title"
+          :data-src="imgSrc"
           class="portfolio-list-item__img"
-          src="https://www.bubbowrap.com/wp-content/uploads/2018/08/itpa-thumb.jpg"
+          :src="imgSrc"
           loading="lazy"
         />
         <figcaption class="portfolio-list-item__title">
-          National ITPA
-          <span class="portfolio-list-item__tag">Design / Development</span>
+          {{ post.attributes.title }}
+          <span class="portfolio-list-item__tag">{{
+            post.attributes.category.replace(', ', ' / ')
+          }}</span>
         </figcaption>
       </a>
     </figure>
@@ -19,7 +21,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  // eslint-disable-next-line
+  props: ['post'],
+  computed: {
+    imgSrc(post) {
+      return require(`~/content/portfolio/images/${this.post.attributes.thumbnail}`)
+    },
+  },
+  created() {
+    console.log(this.post)
+  },
+}
 </script>
 
 <style lang="sass" scoped></style>
