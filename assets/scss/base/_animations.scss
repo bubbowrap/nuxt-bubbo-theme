@@ -59,11 +59,13 @@ $aos-distance: 100px !default;
 
     [data-aos^='fade'][data-aos^='fade'] {
       opacity: 0;
-      transition-property: opacity, transform;
+      transition-property: opacity, transform, visibility;
+      visibility: hidden;
 
       &.aos-animate {
         opacity: 1;
         transform: none;
+        visibility: visible;
       }
     }
 
