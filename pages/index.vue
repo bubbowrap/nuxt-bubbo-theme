@@ -29,7 +29,9 @@ export default {
       return resolve(key)
     })
     return {
-      posts: posts.sort((post) => post.attributes.order),
+      posts: posts
+        .filter((post) => post.attributes.active)
+        .sort((a, b) => a.attributes.order - b.attributes.order),
     }
   },
 }

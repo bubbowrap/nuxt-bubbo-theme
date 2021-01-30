@@ -4,7 +4,8 @@
       <a
         :href="`/portfolio/${post.attributes.title
           .toLowerCase()
-          .replace(' ', '-')}`"
+          .split(' ')
+          .join('-')}`"
         class="portfolio-list-item__link"
       >
         <img

@@ -1,6 +1,6 @@
 ---
 title: Crevo Footwear
-description: Web development project for National ITPA. National ITPA is the volunteer organization created by and for the independent telecommunications industry. I handled all design and development tasks using HTML5, Bootstrap, CSS3, jQuery/javascript, and SiteSource 3 CMS (ASP.net).
+description: Web development project for Crevo Footwear. I handled most front-end development tasks using HTML5, Bootstrap, CSS3, jQuery/javascript, ProductCart E-commerce System.
 category: Development
 role: Front-end Development
 link: https://www.crevofootwear.com/
@@ -11,6 +11,7 @@ client: Elan Polo International
 tools: Brackets, Adobe Photoshop, Adobe Illustrator
 tags: HTML5, CSS3, Bootstrap, jQuery/javascript, ProductCart eCommerce
 order: 1
+active: true
 ---
 
 ## Project Details
