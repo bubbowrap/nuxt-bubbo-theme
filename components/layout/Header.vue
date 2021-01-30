@@ -20,12 +20,19 @@
           :key="index"
           class="navigation__list-item"
         >
-          <a :href="value" class="navigation__link">{{ name }}</a>
+          <a
+            :href="
+              $route.path === '/' ? (value = value) : (value = `/${value}`)
+            "
+            class="navigation__link"
+          >
+            {{ name }}
+          </a>
         </li>
       </ul>
-      <a :href="resume_link" class="btn btn--resume">Resume</a>
+      <a :href="resumeLink" class="btn btn--resume">Resume</a>
     </nav>
-    <MobileMenu :menu-items="menuItems" />
+    <MobileMenu :menu-items="menuItems" :resume-link="resumeLink" />
     <Hamburger />
   </header>
 </template>
@@ -48,7 +55,7 @@ export default {
         About: '#about',
         Contact: '#contact',
       },
-      resume_link: 'http://www.google.com',
+      resumeLink: 'pdf/jeremysamuel-resume2020.pdf',
     }
   },
 }

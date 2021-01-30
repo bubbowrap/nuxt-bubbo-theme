@@ -10,6 +10,8 @@ alt: National ITPA image
 client: Independent Telecommunications Pioneer Association (ITPA)
 tools: Brackets, Photoshop, Illustrator
 tags: HTML5, Bootstrap, CSS3, jQuery/javascript, and SiteSource 3 CMS (ASP.net)
+order: 0
+active: true
 ---
 
 ## Project Details
@@ -19,6 +21,11 @@ ITPA is the volunteer organization created by and for the independent telecommun
 ### The Problem
 
 It was important for the site to be fast, engaging, easy to navigate, and easily managed by the client. Some of the biggest issues the client had with their previous site were:
+
+- Very outdated design.
+- Important information difficult to find.
+- Very difficult to update.
+- Not mobile responsive.
 
 ### Initial Ideas/Style Concepts
 

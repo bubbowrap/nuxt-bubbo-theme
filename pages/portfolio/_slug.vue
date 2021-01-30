@@ -32,11 +32,7 @@
       data-aos-delay="100"
     >
       <flickity ref="flickity" class="flickity" :options="flickityOptions">
-        <div
-          v-for="(slide, index) in sliderImages"
-          :key="index"
-          class="carousel-cell"
-        >
+        <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
           <img :src="slide" loading="lazy" :alt="post.attributes.alt" />
         </div>
       </flickity>
@@ -47,6 +43,7 @@
       data-aos="fade-up"
       data-aos-delay="100"
     >
+      <!-- eslint-disable vue/no-v-html -->
       <div class="project-details" v-html="post.html"></div>
       <ProjectSpecs :post-attributes="post.attributes" />
     </section>
@@ -56,7 +53,7 @@
       data-aos-offset="100"
       data-aos-delay="100"
     >
-      <a href="/#work" class="btn btn--line">Back to Portfolio</a>
+      <NuxtLink to="/#work" class="btn btn--line">Back to Portfolio</NuxtLink>
     </section>
   </main>
 </template>
@@ -68,7 +65,7 @@ export default {
   components: { ProjectSpecs },
   async asyncData({ params }) {
     try {
-      const post = await import(`~/content/portfolio/${params.slug}.md`)
+      const post = await import(`@/content/portfolio/${params.slug}.md`)
       return {
         post,
       }
@@ -87,12 +84,9 @@ export default {
     }
   },
   computed: {
-    imgSrc() {
-      return require(`~/assets/img/portfolio/${this.post.attributes.thumbnail}`)
-    },
     sliderImages() {
       return this.post.attributes.slides.map((slide) =>
-        require(`~/assets/img/portfolio/${slide}`)
+        require(`@/content/portfolio/images/${slide}`)
       )
     },
   },

@@ -1,7 +1,7 @@
 <template>
   <main class="site-main c-homepage" role="main">
     <Hero />
-    <Work />
+    <Work :posts="posts" />
     <Experience />
     <About />
     <Contact />
@@ -23,7 +23,16 @@ export default {
     About,
     Contact,
   },
+  async asyncData() {
+    const resolve = await require.context('~/content/', true, /\.md$/)
+    const posts = await resolve.keys().map((key) => {
+      return resolve(key)
+    })
+    return {
+      posts: posts
+        .filter((post) => post.attributes.active)
+        .sort((a, b) => a.attributes.order - b.attributes.order),
+    }
+  },
 }
 </script>
-
-<style lang="scss"></style>
