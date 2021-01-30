@@ -33,7 +33,7 @@
     >
       <flickity ref="flickity" class="flickity" :options="flickityOptions">
         <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
-          <img :src="slide" loading="lazy" :alt="post.attributes.alt" />
+          <img :src="slide" :alt="post.attributes.alt" />
         </div>
       </flickity>
     </section>
