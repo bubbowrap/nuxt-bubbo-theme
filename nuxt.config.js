@@ -22,9 +22,11 @@ export default {
     ],
 
     link: [
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylesheet',
+        rel: ['stylesheet preload'],
+        as: 'style',
         href:
           'https://fonts.googleapis.com/css?family=Palanquin:300,400,700&display=swap',
       },
