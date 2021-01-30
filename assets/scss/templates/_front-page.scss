@@ -132,6 +132,8 @@
                 }
 
                 .portfolio-list-item__img {
+                    max-width: 100%;
+                    height: auto;
                     transition: $animation-basic;
                     opacity: .2;
 

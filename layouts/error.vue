@@ -18,8 +18,12 @@
             </p>
           </template>
           <template v-else>
-            <h1>An error occurred</h1>
-            <p>Who knows what happened here. Either way, yikes.</p>
+            <h1>{{ error.statusCode }}</h1>
+            <h2 class="sub"></h2>
+            <p>
+              An error occurred. Who knows what happened here? Either way,
+              yikes.
+            </p>
           </template>
           <br />
           <NuxtLink to="/" class="btn btn--line">Back to Homepage</NuxtLink>

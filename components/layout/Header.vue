@@ -30,7 +30,7 @@
           </a>
         </li>
       </ul>
-      <a :href="resumeLink" class="btn btn--resume">Resume</a>
+      <a :href="`/${resumeLink}`" class="btn btn--resume">Resume</a>
     </nav>
     <MobileMenu :menu-items="menuItems" :resume-link="resumeLink" />
     <Hamburger />

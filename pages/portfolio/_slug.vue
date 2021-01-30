@@ -104,3 +104,9 @@ export default {
   },
 }
 </script>
+
+<style>
+flickity {
+  display: block;
+}
+</style>

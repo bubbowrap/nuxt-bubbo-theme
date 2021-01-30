@@ -14,7 +14,7 @@
         </a>
       </li>
     </ul>
-    <a :href="resumeLink" class="btn btn--resume">Resume</a>
+    <a :href="`/${resumeLink}`" class="btn btn--resume">Resume</a>
   </aside>
 </template>
 
