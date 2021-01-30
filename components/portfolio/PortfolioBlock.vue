@@ -1,7 +1,12 @@
 <template>
   <li class="portfolio-list-item">
     <figure>
-      <a :href="`${post}`" class="portfolio-list-item__link">
+      <a
+        :href="`/portfolio/${post.attributes.title
+          .toLowerCase()
+          .replace(' ', '-')}`"
+        class="portfolio-list-item__link"
+      >
         <img
           :alt="post.attributes.title"
           :data-src="imgSrc"
@@ -28,9 +33,6 @@ export default {
     imgSrc(post) {
       return require(`~/content/portfolio/images/${this.post.attributes.thumbnail}`)
     },
-  },
-  created() {
-    console.log(this.post)
   },
 }
 </script>

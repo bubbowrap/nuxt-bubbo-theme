@@ -32,13 +32,6 @@ export default {
       posts: posts.sort((post) => post.attributes.order),
     }
   },
-  methods: {
-    getPermalink(post) {
-      return `${this.prefix}/${
-        post.meta.resourcePath.split('\\').pop().split('/').pop().split('.')[0]
-      }`
-    },
-  },
 }
 </script>
 <style lang="scss"></style>

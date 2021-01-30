@@ -6,7 +6,12 @@
         :key="index"
         class="navigation-mobile__list-item"
       >
-        <a :href="value" class="navigation-mobile__link">{{ name }}</a>
+        <a
+          :href="$route.path === '/' ? (value = value) : (value = `/${value}`)"
+          class="navigation-mobile__link"
+        >
+          {{ name }}
+        </a>
       </li>
     </ul>
     <a :href="resumeLink" class="btn btn--resume">Resume</a>
