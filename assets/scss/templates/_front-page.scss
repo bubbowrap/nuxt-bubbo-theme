@@ -111,11 +111,7 @@
     .portfolio-list-item {
         justify-self: center;
         position: relative;
-        background: $dark;
-
-        @media (min-width: $screen-md) {
-            background: rgba(0, 0, 15, 0.8);
-        }
+        background: darken($dark, 10%);
 
         & > figure {
             display: flex;
@@ -282,6 +278,7 @@
             display: flex;
             flex-flow: wrap column;
             max-height: 15rem;
+            column-gap: rem(40);
         }
 
         li {

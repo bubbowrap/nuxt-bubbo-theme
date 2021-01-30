@@ -14,31 +14,25 @@ $(document).ready(function () {
   'use strict'
 
   function closeMenu() {
-    $('.hamburger').toggleClass('is-active')
-    $('body').toggleClass('no-scroll')
-    $('.navigation-mobile').toggleClass('is-active')
-    $('.overlay').toggleClass('is-active')
+    document.querySelector('.hamburger').classList.toggle('is-active')
+    document.querySelector('body').classList.toggle('no-scroll')
+    document.querySelector('.navigation-mobile').classList.toggle('is-active')
+    document.querySelector('.overlay').classList.toggle('is-active')
   }
 
-  // changes how jump to works depending if you're on the homepage or not
-  if ($('body').hasClass('home')) {
-    $('a[href^="/#"]').on('touchstart click', function (e) {
-      // Prevent the jump and the #hash from appearing on the address bar
+  // scrollTo for homepage
+
+  $('a[href^="#"]').on('click', function (e) {
+    // Prevent the jump and the #hash from appearing on the address bar
+    e.preventDefault()
+    $(window)
+      .stop(true)
+      .scrollTo(this.hash, { duration: 700, interrupt: false })
+
+    if ($('.navigation-mobile__link')) {
       closeMenu()
-      e.preventDefault()
-      $(window)
-        .stop(true)
-        .scrollTo(this.hash, { duration: 700, interrupt: false })
-    })
-  } else {
-    $('a[href^="#"]').on('click', function (e) {
-      // Prevent the jump and the #hash from appearing on the address bar
-      e.preventDefault()
-      $(window)
-        .stop(true)
-        .scrollTo(this.hash, { duration: 1000, interrupt: false })
-    })
-  }
+    }
+  })
 
   // ------------------------------------------
   // 	 Mobile Menu

@@ -43,6 +43,7 @@
       data-aos="fade-up"
       data-aos-delay="100"
     >
+      <!-- eslint-disable vue/no-v-html -->
       <div class="project-details" v-html="post.html"></div>
       <ProjectSpecs :post-attributes="post.attributes" />
     </section>

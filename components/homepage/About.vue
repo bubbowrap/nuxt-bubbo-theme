@@ -28,30 +28,51 @@
             >UI <span class="accent">+</span> Design</strong
           >
           <ul class="skills-lists__list">
-            <li>Wireframing</li>
-            <li>UI Design</li>
-            <li>Sketch App</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Logo Design</li>
+            <li v-for="skill in skills.design" :key="skill">
+              {{ skill }}
+            </li>
           </ul>
         </div>
         <div>
           <strong class="skills-lists__title">Development</strong>
           <ul class="skills-lists__list">
-            <li>HTML / HTML5</li>
-            <li>CSS3 / SASS / BEM</li>
-            <li>Javascript / JQuery</li>
-            <li>VueJS</li>
-            <li>WordPress / Twig / ACF</li>
-            <li>Twitter Bootstrap</li>
-            <li>Version Control (Git)</li>
-            <li>Responsive / Mobile First</li>
-            <li>Cross Platform / Browser</li>
-            <li>Performance / Accessibility</li>
+            <li v-for="skill in skills.development" :key="skill">
+              {{ skill }}
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      skills: {
+        design: [
+          'Wireframing',
+          'UI Design',
+          'Sketch App',
+          'Photoshop',
+          'Illustrator',
+          'Logo Design',
+        ],
+        development: [
+          'HTML / HTML5',
+          'CSS3 / SASS / BEM',
+          'Javascript / JQuery',
+          'VueJS / Nuxt',
+          'WordPress / Twig / ACF',
+          'Twitter Bootstrap',
+          'Version Control (Git)',
+          'Responsive / Mobile First',
+          'Cross Platform / Browser',
+          'Performance / Accessibility',
+        ],
+      },
+    }
+  },
+}
+</script>

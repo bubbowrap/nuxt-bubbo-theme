@@ -31,9 +31,8 @@
 
 <script>
 export default {
+  // eslint-disable-next-line
   props: ['error'],
   layout: 'error',
 }
 </script>
-
-<style lang="scss"></style>
