@@ -71,8 +71,10 @@
     </div>
     <div class="experience-resume-btn">
       <a
-        href="https://www.bubbowrap.com/wp-content/uploads/2020/02/jeremysamuel-resume2020.pdf"
+        :href="$store.state.resumeLink"
         class="btn btn--line"
+        target="_blank"
+        rel="noopener"
         >View Resume</a
       >
     </div>

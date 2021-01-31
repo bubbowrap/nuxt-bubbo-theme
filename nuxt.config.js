@@ -12,7 +12,6 @@ export default {
     title: 'Jeremy Samuel | Front-end Designer',
     meta: [
       { charset: 'utf-8' },
-      { httpEquiv: 'x-ua-compatible', content="ie=edge" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:url', content: 'https://jeremysamuel.dev' },
       { property: 'og:title', content: 'Jeremy Samuel | Front-end Designer' },

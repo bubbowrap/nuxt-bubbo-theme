@@ -35,6 +35,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import MobileMenu from '@/components/mobile/MobileMenu.vue'
 import Hamburger from '@/components/mobile/Hamburger.vue'
 
@@ -43,18 +44,7 @@ export default {
     MobileMenu,
     Hamburger,
   },
-
-  data() {
-    return {
-      menuItems: {
-        Work: '#work',
-        Experience: '#experience',
-        About: '#about',
-        Contact: '#contact',
-      },
-      resumeLink: 'pdf/jeremysamuel-resume2020.pdf',
-    }
-  },
+  computed: mapState(['resumeLink', 'menuItems']),
 }
 </script>
 
