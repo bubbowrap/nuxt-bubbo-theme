@@ -43,8 +43,8 @@ export default {
   },
   methods: {
     showMore() {
-      this.featuredPosts = this.posts
       this.$nuxt.refresh()
+      this.featuredPosts = this.posts
     },
   },
 }
