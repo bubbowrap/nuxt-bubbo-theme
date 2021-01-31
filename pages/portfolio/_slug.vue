@@ -31,17 +31,16 @@
       data-aos-offset="200"
       data-aos-delay="100"
     >
-      <no-ssr>
-        <flickity ref="flickity" class="flickity" :options="flickityOptions">
-          <div
-            v-for="(slide, i) in sliderImages"
-            :key="i"
-            class="carousel-cell"
-          >
-            <img :src="slide" loading="lazy" :alt="post.attributes.alt" />
-          </div>
-        </flickity>
-      </no-ssr>
+      <flickity
+        ref="flickity"
+        class="flickity"
+        :options="flickityOptions"
+        data-flickity-lazyload
+      >
+        <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
+          <img :src="slide" loading="lazy" :alt="post.attributes.alt" />
+        </div>
+      </flickity>
     </section>
 
     <section
