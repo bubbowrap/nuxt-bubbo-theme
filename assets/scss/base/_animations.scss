@@ -6,12 +6,7 @@ $aos-easing: (
   ease-out: cubic-bezier(.000, 0, .580, 1),
   ease-in-out: cubic-bezier(.420, 0, .580, 1),
 );
-[data-aos] {
-  visibility: hidden;
-}
-[data-aos].aos-animate {
-  visibility: visible;
-}
+
 // Easings implementations
 // Default timing function: 'ease'
 
@@ -108,3 +103,12 @@ $aos-distance: 100px !default;
     }
 }
   
+
+@media (prefers-reduced-motion) {
+  [data-aos],
+  [data-aos^='fade'][data-aos^='fade'] {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+}
