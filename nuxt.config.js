@@ -36,8 +36,7 @@ export default {
 
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'canonical', href: 'https://jeremysamuel.dev' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }    
     ],
 
     script: [
