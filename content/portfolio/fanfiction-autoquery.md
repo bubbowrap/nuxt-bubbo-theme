@@ -18,6 +18,8 @@ active: true
 
 If you've spent way too much time on the fanfiction site ArchiveOfOurOwn (AO3) like I have, you've probably run up against the issue of not being able to save your most used filters. Having to go through the painstaking process of including the things you want and excluding the things you don't want gets old fast, and if you have very specific tastes setting up each filter can easily take 1-2 minutes which you need to do *each time you want to read something*.
 
-This app fixes that. Save and view all of your top visited queries in one central location and get some of your precious time back. Built with **VueJS** and **Vuetify** to build out the UI and **Firebase** to store and load the data. I also used Firebase's authentification service to allow Google user accounts, and its storage service to allow the upload of images. Finally, I deployed the app with **Netlify**.
+This app fixes that. Save and view all of your top visited queries in one central location and get some of your precious time back.
+
+Built with **VueJS** and **Vuetify** to build out the UI and **Firebase** to store and load the data. I also used Firebase's authentification service to allow Google user accounts, and its storage service to allow the upload of images. Finally, I deployed the app with **Netlify**.
 
 All that to say: Yes, I really did build a whole app just to feed my fanfiction addiction.
