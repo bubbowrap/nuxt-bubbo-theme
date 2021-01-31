@@ -1,6 +1,6 @@
 <template>
   <header class="site-header">
-    <a href="/" class="site-header__logo" data-aos="fade-in"
+    <a href="/" class="site-header__logo" aria-label="home" data-aos="fade-in"
       ><img
         onerror="@/assets/img/jsamuel-logo.png"
         src="@/assets/img/jsamuel-logo.svg"
