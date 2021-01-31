@@ -6,69 +6,66 @@ AOS.init({
   duration: 1200,
 })
 
-$(document).ready(function () {
-  // ------------------------------------------
-  // 	 Scroll Jump To
-  // ------------------------------------------
+// ------------------------------------------
+// 	 Scroll Jump To
+// ------------------------------------------
 
-  'use strict'
+const hamburger = document.querySelector('.hamburger')
+const overlay = document.querySelector('.overlay')
 
-  function closeMenu() {
-    document.querySelector('.hamburger').classList.toggle('is-active')
-    document.querySelector('body').classList.toggle('no-scroll')
-    document.querySelector('.navigation-mobile').classList.toggle('is-active')
-    document.querySelector('.overlay').classList.toggle('is-active')
-  }
+function closeMenu() {
+  hamburger.classList.toggle('is-active')
+  document.querySelector('body').classList.toggle('no-scroll')
+  document.querySelector('.navigation-mobile').classList.toggle('is-active')
+  overlay.classList.toggle('is-active')
+}
 
-  // scrollTo for homepage
+// scrollTo for homepage
 
-  $('a[href^="#"]').on('click', function (e) {
-    // Prevent the jump and the #hash from appearing on the address bar
-    e.preventDefault()
-    $(window)
-      .stop(true)
-      .scrollTo(this.hash, { duration: 700, interrupt: false })
-
-    if ($('.navigation-mobile__link')) {
+document
+  .querySelector('.navigation-mobile__list')
+  .addEventListener('click', function (e) {
+    if (e.target.classList.contains('navigation-mobile__link')) {
       closeMenu()
     }
   })
 
-  // ------------------------------------------
-  // 	 Mobile Menu
-  // ------------------------------------------
+// ------------------------------------------
+// 	 Mobile Menu
+// ------------------------------------------
 
-  // toggles active states of overlay/hamburger menu/menu
-  $('.hamburger, .overlay').on('click', function (e) {
-    closeMenu()
-    return false
-  })
+// toggles active states of overlay/hamburger menu/menu
+hamburger.addEventListener('click', closeMenu)
+overlay.addEventListener('click', closeMenu)
 
-  // ------------------------------------------
-  // 	 Sticky Header
-  // ------------------------------------------
+// ------------------------------------------
+// 	 Sticky Header
+// ------------------------------------------
 
-  // sticky header, shows on scroll up hides on scroll down
-  let c
-  let currentScrollTop = 0
-  const navbar = $('.site-header')
+// sticky header, shows on scroll up hides on scroll down
+let c
+let currentScrollTop = 0
+const navbar = document.querySelector('.site-header')
 
-  $(window).scroll(function () {
-    const a = $(window).scrollTop()
-    const b = navbar.height()
+document.addEventListener('scroll', function () {
+  const a =
+    window.pageYOffset ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0
+  const b = navbar.offsetHeight
 
-    currentScrollTop = a
-    // adjust navbar height on scroll
-    if (a >= 50) {
-      navbar.addClass('is-active')
-    } else {
-      navbar.removeClass('is-active')
-    }
-    if (c + 5 < currentScrollTop && a > b + b) {
-      navbar.addClass('is-hidden')
-    } else if (c > currentScrollTop && !(a <= b)) {
-      navbar.removeClass('is-hidden')
-    }
-    c = currentScrollTop
-  })
+  currentScrollTop = a
+  // adjust navbar height on scroll
+  if (a >= 50) {
+    navbar.classList.add('is-active')
+  } else {
+    navbar.classList.remove('is-active')
+  }
+  if (c + 5 < currentScrollTop && a > b + b) {
+    navbar.classList.add('is-hidden')
+  } else if (c > currentScrollTop && !(a <= b)) {
+    navbar.classList.remove('is-hidden')
+  }
+  c = currentScrollTop
 })

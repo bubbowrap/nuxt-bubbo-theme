@@ -1,9 +1,10 @@
 <template>
   <section
     id="about"
-    class="about container hp-grid aos-init"
+    class="about container hp-grid"
     data-aos="fade-up"
     data-aos-offset="200"
+    tabindex="-1"
   >
     <h2>About</h2>
     <div>

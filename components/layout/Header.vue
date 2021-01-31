@@ -8,29 +8,26 @@
         scale="0"
     /></a>
 
-    <nav
-      class="navigation"
-      role="navigation"
-      data-aos="fade-in"
-      data-aos-delay="100"
-    >
-      <ul class="navigation__list">
-        <li
-          v-for="(value, name, index) in menuItems"
-          :key="index"
-          class="navigation__list-item"
-        >
-          <a
-            :href="
-              $route.path === '/' ? (value = value) : (value = `/${value}`)
-            "
-            class="navigation__link"
+    <nav role="navigation" data-aos="fade-in" data-aos-delay="0">
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li
+            v-for="(value, name, index) in menuItems"
+            :key="index"
+            class="navigation__list-item"
           >
-            {{ name }}
-          </a>
-        </li>
-      </ul>
-      <a :href="`/${resumeLink}`" class="btn btn--resume">Resume</a>
+            <a
+              :href="
+                $route.path === '/' ? (value = value) : (value = `/${value}`)
+              "
+              class="navigation__link"
+            >
+              {{ name }}
+            </a>
+          </li>
+        </ul>
+        <a :href="`/${resumeLink}`" class="btn btn--resume">Resume</a>
+      </div>
     </nav>
     <MobileMenu :menu-items="menuItems" :resume-link="resumeLink" />
     <Hamburger />
