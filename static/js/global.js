@@ -22,6 +22,10 @@ function closeMenu() {
 
 // scrollTo for homepage
 
+window.onload = function () {
+  document.querySelector('html').style.scrollBehavior = 'smooth'
+}
+
 document
   .querySelector('.navigation-mobile__list')
   .addEventListener('click', function (e) {

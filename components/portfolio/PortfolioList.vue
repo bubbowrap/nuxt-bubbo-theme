@@ -7,6 +7,9 @@
         :post="post"
       />
     </ul>
+    <div v-if="showMoreBtn" class="portfolio__button-container">
+      <a href="#" class="btn btn--resume" @click="showMore">More Projects +</a>
+    </div>
   </div>
 </template>
 
@@ -18,7 +21,18 @@ export default {
     PortfolioBlock,
   },
   // eslint-disable-next-line
-  props: ['posts']
+  props: ['posts', 'showMoreBtn'],
+  methods: {
+    showMore(e) {
+      e.preventDefault()
+      this.$emit('clicked')
+      this.$nextTick(() => {
+        document
+          .querySelector('.portfolio__button-container')
+          .classList.add('is-hidden')
+      })
+    },
+  },
 }
 </script>
 
