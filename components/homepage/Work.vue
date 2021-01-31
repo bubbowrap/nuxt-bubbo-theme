@@ -1,10 +1,11 @@
 <template>
   <section
     id="work"
-    class="work container hp-grid aos-init"
+    class="work container hp-grid"
     data-aos="fade-up"
     data-aos-offset="100"
     data-aos-delay="400"
+    tabindex="-1"
   >
     <h2>Work</h2>
     <PortfolioList :posts="posts" />

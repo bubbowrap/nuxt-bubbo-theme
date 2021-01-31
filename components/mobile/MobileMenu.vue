@@ -1,5 +1,5 @@
 <template>
-  <aside class="navigation-mobile">
+  <aside class="navigation-mobile" role="navigation">
     <ul class="navigation-mobile__list">
       <li
         v-for="(value, name, index) in menuItems"

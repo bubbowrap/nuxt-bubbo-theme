@@ -1,9 +1,10 @@
 <template>
   <section
     id="contact"
-    class="contact container hp-grid aos-init"
+    class="contact container hp-grid"
     data-aos="fade-up"
     data-aos-offset="200"
+    tabindex="-1"
   >
     <h2>Contact</h2>
     <div>

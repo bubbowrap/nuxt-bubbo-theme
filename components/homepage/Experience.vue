@@ -1,9 +1,10 @@
 <template>
   <section
     id="experience"
-    class="experience container hp-grid aos-init"
+    class="experience container hp-grid"
     data-aos="fade-up"
     data-aos-offset="200"
+    tabindex="-1"
   >
     <h2>Experience</h2>
     <div class="experience-box">

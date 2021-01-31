@@ -36,18 +36,6 @@ export default {
     ],
 
     script: [
-      {
-        src: '/js/jquery-3.5.1.min.js',
-        type: 'text/javascript',
-        body: true,
-        defer: true,
-      },
-      {
-        src: '/js/jquery.scrollTo.js',
-        type: 'text/javascript',
-        body: true,
-        defer: true,
-      },
       { src: '/js/aos.js', type: 'text/javascript', body: true, defer: true },
       {
         src: '/js/global.js',

@@ -1,6 +1,6 @@
 ---
 title: National ITPA
-description: Web development project for National ITPA. National ITPA is the volunteer organization created by and for the independent telecommunications industry. I handled all design and development tasks using HTML5, Bootstrap, CSS3, jQuery/javascript, and SiteSource 3 CMS (ASP.net).
+description: Web development project for National ITPA. I handled all design and development tasks using HTML5, Bootstrap, CSS3, jQuery/javascript, and SiteSource 3 CMS (ASP.net).
 category: Design, Development
 role: Design, Front-end Development
 link: https://www.nationalitpa.com/

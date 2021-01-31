@@ -50,6 +50,7 @@
 
 .navigation {
     display: none;
+
     @media (min-width: $screen-md) {
         display: flex;
         align-items: center;
@@ -63,8 +64,6 @@
     padding-right: 1rem;
     display: flex;
 }
-
-.navigation__list-item {}
 
 .navigation__link {
     color: $dark;
