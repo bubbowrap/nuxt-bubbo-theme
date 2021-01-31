@@ -31,11 +31,17 @@
       data-aos-offset="200"
       data-aos-delay="100"
     >
-      <flickity ref="flickity" class="flickity" :options="flickityOptions">
-        <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
-          <img :src="slide" loading="lazy" :alt="post.attributes.alt" />
-        </div>
-      </flickity>
+      <no-ssr>
+        <flickity ref="flickity" class="flickity" :options="flickityOptions">
+          <div
+            v-for="(slide, i) in sliderImages"
+            :key="i"
+            class="carousel-cell"
+          >
+            <img :src="slide" loading="lazy" :alt="post.attributes.alt" />
+          </div>
+        </flickity>
+      </no-ssr>
     </section>
 
     <section
@@ -71,16 +77,6 @@ export default {
       }
     } catch (error) {
       return false
-    }
-  },
-  data() {
-    return {
-      hey: {
-        wrapAround: true,
-        imagesLoaded: true,
-        contain: true,
-        accessibility: true,
-      },
     }
   },
   computed: {
