@@ -31,13 +31,9 @@
       data-aos-offset="200"
       data-aos-delay="100"
     >
-      <flickity
-        ref="flickity"
-        class="flickity"
-        :options="flickityOptions"
-      >
+      <flickity ref="flickity" class="flickity" :options="flickityOptions">
         <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
-          <img :src="slide" :alt="post.attributes.alt" />
+          <img :src="slide" :alt="post.attributes.alt" loading="lazy" />
         </div>
       </flickity>
     </section>
