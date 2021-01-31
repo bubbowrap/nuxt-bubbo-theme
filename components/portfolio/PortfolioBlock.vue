@@ -1,5 +1,10 @@
 <template>
-  <li class="portfolio-list-item" data-aos="fade-in" data-aos-offset="0">
+  <li
+    class="portfolio-list-item"
+    data-aos="fade-in"
+    data-aos-offset="0"
+    data-aos-delay="100"
+  >
     <figure>
       <a
         :href="`/portfolio/${post.attributes.title
@@ -37,5 +42,3 @@ export default {
   },
 }
 </script>
-
-<style lang="sass" scoped></style>

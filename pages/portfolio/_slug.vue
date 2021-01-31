@@ -33,7 +33,12 @@
     >
       <flickity ref="flickity" class="flickity" :options="flickityOptions">
         <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
-          <img :src="slide" :alt="post.attributes.alt" loading="lazy" />
+          <img
+            :src="placeholder"
+            :data-flickity-lazyload-src="slide"
+            :alt="post.attributes.alt"
+            loading="lazy"
+          />
         </div>
       </flickity>
     </section>
@@ -80,12 +85,16 @@ export default {
         imagesLoaded: true,
         contain: true,
         accessibility: true,
+        lazyLoad: 2,
       }
     },
     sliderImages() {
       return this.post.attributes.slides.map((slide) =>
         require(`@/content/portfolio/images/${slide}`)
       )
+    },
+    placeholder() {
+      return require(`@/static/images/placeholder.png`)
     },
   },
   head() {

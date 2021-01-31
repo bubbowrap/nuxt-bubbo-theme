@@ -47,5 +47,3 @@ export default {
   computed: mapState(['resumeLink', 'menuItems']),
 }
 </script>
-
-<style lang="scss"></style>
