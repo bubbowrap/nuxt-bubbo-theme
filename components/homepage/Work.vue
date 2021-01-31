@@ -30,7 +30,7 @@ export default {
     return {
       allPosts: [],
       featuredPosts: [],
-      postLimit: 6,
+      postLimit: 8,
       showMoreBtn: true,
     }
   },
