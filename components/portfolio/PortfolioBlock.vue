@@ -1,5 +1,5 @@
 <template>
-  <li class="portfolio-list-item">
+  <li class="portfolio-list-item" data-aos="fade-in" data-aos-offset="0">
     <figure>
       <a
         :href="`/portfolio/${post.attributes.title
