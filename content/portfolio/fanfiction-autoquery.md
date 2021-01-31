@@ -4,7 +4,7 @@ description: Fanfiction AutoQuery lets you save and view all of your top visited
 category: Design, Development
 role: Design, Front-end Development, Back-end Development
 link: https://ffautoquery.netlify.app/
-thumbnail: ffaq/ffaq-thumb.png
+thumbnail: ffaq/ffaq-thumb.jpg
 slides: ['ffaq/ffaq-home-pg.jpg', 'ffaq/ffaq-login-pg.jpg', 'ffaq/ffaq-modal-pg.jpg', 'ffaq/ffaq-mobile-ss.jpg']
 alt: Fanfiction AutoQuery Screenshot
 client: Personal Project
