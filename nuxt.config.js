@@ -13,7 +13,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { property: 'og:url', content: 'https://jeremysamuel.dev' },
+      // { property: 'og:url', content: 'https://jeremysamuel.dev' },
       { property: 'og:title', content: 'Jeremy Samuel | Front-end Designer' },
       {
         property: 'og:description',
@@ -37,7 +37,7 @@ export default {
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'canonical', href: 'https://jeremysamuel.dev' },
+      // { rel: 'canonical', href: 'https://jeremysamuel.dev' },
     ],
 
     script: [
