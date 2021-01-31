@@ -28,23 +28,21 @@ export default {
   props: ['posts'],
   data() {
     return {
+      allPosts: [],
       featuredPosts: [],
       postLimit: 6,
       showMoreBtn: true,
     }
   },
   created() {
-    this.featuredPosts =
-      this.posts.length === this.postLimit
-        ? this.posts
-        : this.posts.slice(0, this.postLimit)
+    this.allPosts = this.posts
+    this.featuredPosts = this.posts.slice(0, this.postLimit)
     // shows more button depending on number of posts
     this.showMoreBtn = this.postLimit < this.posts.length
   },
   methods: {
     showMore() {
-      this.featuredPosts = this.posts
-      this.$nuxt.refresh()
+      this.featuredPosts = this.allPosts
     },
   },
 }
