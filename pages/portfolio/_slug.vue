@@ -18,7 +18,7 @@
               target="_blank"
               rel="noopener"
             >
-              Visit Site
+              View Project
             </a>
           </div>
         </template>
