@@ -34,7 +34,7 @@
       <flickity
         ref="flickity"
         class="flickity"
-        data-flickity="{imagesLoaded: true, wrapAround: true, contain: true, accessibility: true}"
+        :options="{imagesLoaded: true, wrapAround: true, contain: true, accessibility: true}"
       >
         <div v-for="(slide, i) in sliderImages" :key="i" class="carousel-cell">
           <img :data-flickity-lazyload="slide" :src="slide" loading="lazy" :alt="post.attributes.alt" />
