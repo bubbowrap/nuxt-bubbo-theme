@@ -13,18 +13,31 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { property: 'og:url', content: '//jeremysamuel.dev' },
+      { property: 'og:url', content: 'https://jeremysamuel.dev' },
+      { property: 'og:title', content: 'Jeremy Samuel | Front-end Designer' },
+      {
+        property: 'og:description',
+        content:
+          'Jeremy Samuel is a designer and front-end developer from Orlando, FL who loves building awesome things for the web and mobile devices.',
+      },
       { name: 'theme-color', content: '#1b1b1b' },
       {
         hid: 'description',
         name: 'description',
         content:
-          'Portfolio site of designer and front-end developer Jeremy Samuel',
+          'Jeremy Samuel is a designer and front-end developer from Orlando, FL who loves building awesome things for the web and mobile devices.',
+      },
+      {
+        name: 'keywords',
+        content:
+          'Jeremy Samuel, Jeremy, Samuel, bubbowrap, designer, web designer, web developer, front-end designer, front-end developer, front-end engineer, javascript',
       },
     ],
 
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: 'https://jeremysamuel.dev' },
     ],
 
     script: [

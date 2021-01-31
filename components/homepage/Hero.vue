@@ -12,7 +12,7 @@
       devices.
     </h1>
     <a
-      href="mailto:hello@bubbowrap.com"
+      :href="`mailto:${$store.state.emailAddress}`"
       class="btn btn--line aos-init"
       data-aos="fade-up"
       data-aos-once="true"

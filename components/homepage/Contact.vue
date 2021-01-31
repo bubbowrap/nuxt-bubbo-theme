@@ -18,7 +18,9 @@
         general), so send me an email and I’ll do my very best to get back to
         you!
       </p>
-      <a href="mailto:hello@bubbowrap.com" class="btn btn--line">Message Me</a>
+      <a :href="`mailto:${$store.state.emailAddress}`" class="btn btn--line"
+        >Message Me</a
+      >
     </div>
   </section>
 </template>

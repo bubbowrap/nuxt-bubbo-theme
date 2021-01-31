@@ -1,15 +1,10 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-export const store = new Vuex.Store({
-  state: {
-    globalLinks: {
-      github: '',
-      codepen: '',
-      twitter: '',
-      linkedIn: '',
-    },
+export const state = () => ({
+  resumeLink: 'pdf/jeremysamuel-resume.pdf',
+  emailAddress: 'bubbowrap@gmail.com',
+  menuItems: {
+    Work: '#work',
+    Experience: '#experience',
+    About: '#about',
+    Contact: '#contact',
   },
 })
