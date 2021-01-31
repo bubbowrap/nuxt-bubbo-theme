@@ -20,4 +20,4 @@ If you've spent way too much time on the fanfiction site ArchiveOfOurOwn (AO3) l
 
 This app fixes that. Save and view all of your top visited queries in one central location and get some of your precious time back. Built with **VueJS** and **Vuetify** to build out the UI and **Firebase** to store and load the data. I also used Firebase's authentification service to allow Google user accounts, and its storage service to allow the upload of images. Finally, I deployed the app with **Netlify**.
 
-ALl that to say: Yes, I really did build a whole app just to feed my fanfiction addiction.
+All that to say: Yes, I really did build a whole app just to feed my fanfiction addiction.
