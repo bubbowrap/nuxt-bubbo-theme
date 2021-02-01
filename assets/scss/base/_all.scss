@@ -8,7 +8,7 @@
 //Base styles
 
 html {
-  scroll-padding-top: rem(50);
+  scroll-padding-top: rem(25);
 
   @media screen and (prefers-reduced-motion: reduce) {
     scroll-behavior: auto !important;
