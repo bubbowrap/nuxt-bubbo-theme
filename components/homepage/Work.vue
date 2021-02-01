@@ -8,9 +8,7 @@
   >
     <div class="work container hp-grid">
       <h2>Work</h2>
-      <client-only>
-        <PortfolioList :posts="posts" />
-      </client-only>
+      <PortfolioList :posts="posts" />
     </div>
   </section>
 </template>
