@@ -85,7 +85,7 @@ export default {
         imagesLoaded: true,
         contain: true,
         accessibility: true,
-        lazyLoad: 2,
+        lazyLoad: true,
       }
     },
     sliderImages() {
