@@ -30,7 +30,7 @@
       </div>
     </nav>
     <MobileMenu :menu-items="menuItems" :resume-link="resumeLink" />
-    <Hamburger />
+    <Hamburger data-aos="fade-in" />
   </header>
 </template>
 
