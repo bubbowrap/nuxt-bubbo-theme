@@ -8,11 +8,7 @@
   >
     <div class="work container hp-grid">
       <h2>Work</h2>
-      <PortfolioList
-        :posts="featuredPosts"
-        :show-more-btn="showMoreBtn"
-        @clicked="showMore"
-      />
+      <PortfolioList :posts="posts" data-server-rendered="true" />
     </div>
   </section>
 </template>
@@ -26,24 +22,5 @@ export default {
   },
   // eslint-disable-next-line
   props: ['posts'],
-  data() {
-    return {
-      allPosts: [],
-      featuredPosts: [],
-      postLimit: 8,
-      showMoreBtn: true,
-    }
-  },
-  created() {
-    this.allPosts = this.posts
-    this.featuredPosts = this.posts.slice(0, this.postLimit)
-    // shows more button depending on number of posts
-    this.showMoreBtn = this.postLimit < this.posts.length
-  },
-  methods: {
-    showMore() {
-      this.featuredPosts = this.allPosts
-    },
-  },
 }
 </script>
