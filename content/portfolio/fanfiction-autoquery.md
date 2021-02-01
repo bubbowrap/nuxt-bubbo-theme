@@ -5,7 +5,7 @@ category: Design, Development
 role: Design, Front-end Development, Back-end Development
 link: https://ffautoquery.netlify.app/
 thumbnail: ffaq/ffaq-thumb.jpg
-slides: ['ffaq/ffaq-mobile-ss.jpg''ffaq/ffaq-home-pg.jpg', 'ffaq/ffaq-login-pg.jpg', 'ffaq/ffaq-modal-pg.jpg']
+slides: ['ffaq/ffaq-mobile-ss.jpg', 'ffaq/ffaq-home-pg.jpg', 'ffaq/ffaq-login-pg.jpg', 'ffaq/ffaq-modal-pg.jpg']
 alt: Fanfiction AutoQuery Screenshot
 client: Personal Project
 tools: VSCode, Vuetify, VueJS, Firebase, Netlify
