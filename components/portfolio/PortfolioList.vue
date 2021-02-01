@@ -41,6 +41,7 @@ export default {
   methods: {
     showMore(e) {
       e.preventDefault()
+      this.$nuxt.refresh()
       this.featuredPosts = this.allPosts
       this.showMoreBtn = false
     },
