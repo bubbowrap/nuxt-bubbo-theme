@@ -5,7 +5,7 @@ category: Design, Development
 role: Design, Front-end Development
 link: https://bored-io.netlify.app/
 thumbnail: bored/bored-thumb.png
-slides: ['bored/bored-home-pg.png', 'bored/bored-saved-pg.png', 'bored/bored-completed-pg.png', 'bored/bored-mobile-ss.png']
+slides: ['bored/bored-mobile-ss.png', 'bored/bored-home-pg.png', 'bored/bored-saved-pg.png', 'bored/bored-completed-pg.png']
 alt: Bored.io Screenshot
 client: Personal Project
 tools: VSCode, Vuetify, VueJS, Firebase, Bored API, Netlify
