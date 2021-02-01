@@ -8,7 +8,7 @@
   >
     <div class="work container hp-grid">
       <h2>Work</h2>
-      <PortfolioList :posts="posts" data-server-rendered="true" />
+      <PortfolioList :posts="posts" data-server-rendered="false" />
     </div>
   </section>
 </template>
