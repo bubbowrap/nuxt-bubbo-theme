@@ -9,7 +9,7 @@
     <h2>About</h2>
     <div>
       <p>
-        Hey, I’m Jeremy! I’m a front-end developer and designer who loves
+        Hey, I’m Jeremy! I’m a front-end developer and designer who loves solving problems and
         building awesome things for the web, and at my core, I’m a learner.
         Whenever I see something cool or engaging I immediately need to know how
         it's done so that I can incorporate it into my own work, and that’s led
