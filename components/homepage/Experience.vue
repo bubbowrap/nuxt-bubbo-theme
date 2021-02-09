@@ -18,8 +18,8 @@
       <ul class="experience-box__list">
         <li class="experience-box__list-tem">
           Designed and developed modern-looking, high-converting landing pages,
-          ads, and calls to action for in-house and client websites with HTML,
-          WordPress, Twig, ACF, Sass, Javascript, and jQuery
+          ads, and calls to action for in-house and client websites with HTML5,
+          WordPress, Twig, ACF, SASS, Javascript, and jQuery
         </li>
         <li class="experience-box__list-tem">
           Collaborated with writers, marketers, and other developers to produce
