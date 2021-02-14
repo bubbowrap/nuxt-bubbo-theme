@@ -1,4 +1,8 @@
-# nuxt-bubbo-theme
+# jeremysamuel.dev
+
+Personal website of Jeremy Samuel, rebuilt using Vue, Nuxt, and Markdown; mostly to have an excuse to learn Nuxt, and even more importantly to get off of Wordpress/paying for expensive hosting.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b1911147-4839-4de9-b361-84471a78be49/deploy-status)](https://app.netlify.com/sites/bubbowrap/deploys)
 
 ## Build Setup
 
