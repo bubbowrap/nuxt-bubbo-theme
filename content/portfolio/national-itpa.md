@@ -10,7 +10,7 @@ alt: National ITPA image
 client: Independent Telecommunications Pioneer Association (ITPA)
 tools: Brackets, Photoshop, Illustrator
 tags: HTML5, Bootstrap, CSS3, jQuery/javascript, and SiteSource 3 CMS (ASP.net)
-order: 2
+order: 6
 active: true
 ---
 

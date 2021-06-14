@@ -10,7 +10,7 @@ alt: Ocala Gran Prix Image
 client: Ocala Gran Prix
 tools: Brackets, Adobe Photoshop, Adobe Illustrator
 tags: HTML5, Bootstrap, CSS3, jQuery/javascript, SiteSource 3 CMS (ASP.net)
-order: 4
+order: 8
 active: true
 ---
 
