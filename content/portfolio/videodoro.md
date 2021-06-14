@@ -16,7 +16,7 @@ active: true
 
 ## Project Details
 
-I know, I know. *Another* pomodoro app? What is this, baby’s first program? Before you roast me too much, I saw this video about an idea called Animedoro by Josh Chen and was immediately struck by inspiration. Now, I'm a full on weeb and love anime but to be frank I don’t always want to watch it, so instead I decided to make it pull YouTube videos instead.
+I know, I know. *Another* pomodoro app? What is this, baby’s first program? Before you roast me *too* much, I saw this video about an idea called Animedoro by Josh Chen and was immediately struck by inspiration. Now, I'm a full on weeb and love anime but to be frank I don’t always want to watch it, so instead I decided to make it pull YouTube videos instead.
 
 So, I’d like to think I’m bringing a little something new to the table with this timer, and it’s miles better than my <a href="https://codepen.io/bubbowrap/details/epqJoq" rel="noopener noreferrer" target="_blank">actual first pomodoro timer</a>. But hey, progress, right?
 
@@ -26,4 +26,4 @@ I started with **Sketch** to map out the initial look and feel. The main ideas w
 
 Next I built out the layout and UI with **Vue.js**, and once I had all of the pieces in and it was looking good on all viewports, I went through to add in the logic/reactivity for the timer itself. After that I grabbed the YouTube api using the always handy Axios to load in the most popular music videos under the length of the break period. Unfortunately due to the limitations of the api I couldn’t pull the user’s recommendations without some sort of scraper, but it may be something I decide to the revisit in the future.
 
-This was a fun little project to work on that I find myself actually using it when working on personal projects.
+This was a fun little project to build that I find myself actually using when working on personal things!
