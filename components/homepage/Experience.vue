@@ -10,7 +10,7 @@
     <div class="experience-box">
       <div class="experience-box__header">
         <div>
-          <h3 class="experience-box__title">Front-end Developer</h3>
+          <h3 class="experience-box__title">Senior Front-end Developer</h3>
           <h4 class="experience-box__company">Launch That</h4>
         </div>
         <div class="experience-box__date">April 2017 - Present</div>

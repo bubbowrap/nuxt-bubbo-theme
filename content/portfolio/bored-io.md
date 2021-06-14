@@ -10,7 +10,7 @@ alt: Bored.io Screenshot
 client: Personal Project
 tools: VSCode, Vuetify, VueJS, Firebase, Bored API, Netlify
 tags: VueJS, Vuetify, Firebase
-order: 1
+order: 3
 active: true
 ---
 

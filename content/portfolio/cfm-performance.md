@@ -10,7 +10,7 @@ alt: CFM Performance Image
 client: Central Florida Performance Parts
 tools: Brackets, Photoshop, Illustrator
 tags: HTML5, CSS3, Twitter Bootstrap, and jQuery/javascript
-order: 2
+order: 5
 active: true
 ---
 

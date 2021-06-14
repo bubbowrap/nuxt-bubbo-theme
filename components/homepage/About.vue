@@ -9,11 +9,12 @@
     <h2>About</h2>
     <div>
       <p>
-        Hey, I’m Jeremy! I’m a front-end developer and designer who loves solving problems and
-        building awesome things for the web, and at my core, I’m a learner.
-        Whenever I see something cool or engaging I immediately need to know how
-        it's done so that I can incorporate it into my own work, and that’s led
-        to me learning a little bit about a lot of different things.
+        Hey, I’m Jeremy! I’m a front-end developer and designer who loves
+        solving problems and building awesome things for the web, and at my
+        core, I’m a learner. Whenever I see something cool or engaging I
+        immediately need to know how it's done so that I can incorporate it into
+        my own work, and that’s led to me learning a little bit about a lot of
+        different things.
       </p>
       <p>
         I graduated from the
@@ -64,7 +65,7 @@ export default {
           'HTML / HTML5',
           'CSS3 / SASS / BEM',
           'Javascript / JQuery',
-          'VueJS / Nuxt',
+          'VueJS / NuxtJS',
           'Twitter Bootstrap',
           'WordPress / Twig / ACF',
           'Version Control (Git)',
