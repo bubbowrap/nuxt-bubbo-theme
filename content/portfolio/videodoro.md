@@ -9,7 +9,7 @@ slides: ['videodoro/videodoro-mobile-ss.jpg', 'videodoro/videodoro-start-dark.jp
 alt: Videodoro Screenshot
 client: Personal Project
 tools: Sketch, VSCode, Buefy, VueJS, YoutubeAPI, Netlify
-tags: VueJS, Buefy, Firebase
+tags: VueJS, Buefy, SCSS
 order: 2
 active: true
 ---
@@ -24,6 +24,6 @@ This is the first *personal* project in awhile that I decided to design/figure o
 
 I started with **Sketch** to map out the initial look and feel. The main ideas were ‘Bold’ and ‘Minimalist’ and ‘Non-distracting,’ something that I think comes across pretty well in the final result.
 
-Next I built out the layout and UI with **Vue.js**, and once I had all of the pieces in and it was looking good on all viewports, I went through to add in the logic/reactivity for the timer itself. After that I grabbed the YouTube api using the always handy Axios to load in the most popular music videos under the length of the break period. Unfortunately due to the limitations of the api I couldn’t pull the user’s recommendations without some sort of scraper, but it may be something I decide to the revisit in the future.
+Next I built out the layout and UI with **Vue.js**, and once I had all of the pieces in and it was looking good on all viewports, I went through to add in the logic/reactivity for the timer itself. After that I grabbed information from the YouTube api using Axios to load in the most popular music videos that were under the length of the break period. Unfortunately due to the limitations of the api I couldn’t pull the user’s recommendations without some sort of scraper, but it may be something I decide to the revisit in the future along with the option to select a video category.
 
-This was a fun little project to work on that I find myself actually using it when working on personal projects.
+This was a fun little project to work on that I find myself actually using to both keep me productive *and* discover new music. Give a try!

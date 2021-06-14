@@ -9,7 +9,7 @@ slides: ['nuxt-theme/nuxt-theme-mobile-ss.jpg', 'nuxt-theme/nuxt-theme-hp.jpg']
 alt: NuxtJS Portfolio Theme Screenshot
 client: Personal Project
 tools: Sketch, VSCode, NuxtJS, SCSS, Markdown, Netlify
-tags: NuxtJS, Netlify
+tags: NuxtJS, SCSS
 order: 1
 active: true
 ---
