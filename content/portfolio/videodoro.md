@@ -16,7 +16,7 @@ active: true
 
 ## Project Details
 
-I know, I know. *Another* pomodoro app? What is this, baby’s first program? Before you roast me too much, I saw this video about an idea called Animedoro by Josh Chen and was immediately struck by inspiration. Now, I'm a full on weeb and love anime but to be frank I don’t always want to watch it, so instead I decided to make it pull YouTube videos instead.
+I know, I know. *Another* pomodoro app? What is this, baby’s first program? Before you roast me *too* much, I saw this video about an idea called Animedoro by Josh Chen and was immediately struck by inspiration. Now, I'm a full on weeb and love anime but to be frank I don’t always want to watch it, so instead I decided to make it pull YouTube videos instead.
 
 So, I’d like to think I’m bringing a little something new to the table with this timer, and it’s miles better than my <a href="https://codepen.io/bubbowrap/details/epqJoq" rel="noopener noreferrer" target="_blank">actual first pomodoro timer</a>. But hey, progress, right?
 
