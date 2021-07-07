@@ -10,7 +10,7 @@ alt: Fanfiction AutoQuery Screenshot
 client: Personal Project
 tools: VSCode, Vuetify, VueJS, Firebase, Netlify
 tags: VueJS, Vuetify, Firebase
-order: 0
+order: 1
 active: true
 ---
 

@@ -10,7 +10,7 @@ alt: NuxtJS Portfolio Theme Screenshot
 client: Personal Project
 tools: Sketch, VSCode, NuxtJS, SCSS, Markdown, Netlify
 tags: NuxtJS, SCSS
-order: 1
+order: 0
 active: true
 ---
 
